@@ -4,9 +4,9 @@ import gpiozero
 import tkinter as tk
 
 # Setup LEDs
-leds = [gpiozero.LED(2),                    # GPIO  2, Blue LED anode
-	gpiozero.LED(3),                        # GPIO  3, Dual LED green anode
-	gpiozero.LED(4),                        # GPIO  4, Dual LED red anode
+leds = [gpiozero.LED(2),                     # GPIO  2, Blue LED anode
+	gpiozero.LED(3),                     # GPIO  3, Dual LED green anode
+	gpiozero.LED(4),                     # GPIO  4, Dual LED red anode
 	gpiozero.PWMLED(12, active_high=False), # GPIO 12, RGB LED blue cathode
 	gpiozero.PWMLED(13, active_high=False), # GPIO 13, RGB LED green cathode
 	gpiozero.PWMLED(19, active_high=False)] # GPIO 19, RGB LED red cathode
